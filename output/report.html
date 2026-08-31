@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<title>Double Proctoring Report</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;padding:2rem;font-size:14px}
+h1{font-size:1.7rem;font-weight:700;color:#f8fafc}
+h2{font-size:0.85rem;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:.08em;margin:1.5rem 0 .6rem}
+.header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.5rem}
+.risk{padding:.35rem 1rem;border-radius:999px;font-weight:700;font-size:.95rem;color:#fff;background:#ef4444}
+.meta{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.8rem;margin-bottom:1.2rem}
+.mc{background:#1e293b;border-radius:.75rem;padding:.9rem 1.1rem}
+.mc .lbl{font-size:.72rem;color:#64748b;text-transform:uppercase;letter-spacing:.05em}
+.mc .val{font-size:1.2rem;font-weight:700;margin-top:.2rem;color:#f1f5f9}
+.cats{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
+.cat-pill{display:flex;align-items:center;gap:.4rem;background:#1e293b;padding:.3rem .7rem;border-radius:.5rem}
+.cnt{font-weight:700;color:#f1f5f9}
+table{width:100%;border-collapse:collapse;background:#1e293b;border-radius:.75rem;overflow:hidden;font-size:.85rem}
+th{background:#0f172a;padding:.65rem .9rem;text-align:left;color:#64748b;font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+td{padding:.7rem .9rem;border-bottom:1px solid #0f172a}
+tr:hover td{background:#263348}
+code{background:#0f172a;padding:.1rem .35rem;border-radius:.25rem;font-size:.8rem;color:#94a3b8}
+a{color:#60a5fa;text-decoration:none}a:hover{text-decoration:underline}
+.cat{padding:.15rem .5rem;border-radius:.35rem;font-size:.75rem;font-weight:600}
+.cat-screen{background:#7f1d1d;color:#fca5a5}
+.cat-webcam{background:#4a1d96;color:#c4b5fd}
+.cat-audio{background:#713f12;color:#fde68a}
+.cat-process{background:#1e3a5f;color:#93c5fd}
+.cat-other{background:#1e293b;color:#94a3b8}
+.conf{background:#172435;padding:.1rem .4rem;border-radius:.25rem;font-weight:700;color:#60a5fa}
+.audit-thumbs{display:flex;flex-wrap:wrap;gap:.5rem}
+.audit-thumb{background:#1e293b;padding:.3rem .7rem;border-radius:.5rem;font-size:.78rem}
+.no-v{text-align:center;padding:3rem;color:#22c55e;font-size:1rem}
+footer{margin-top:2rem;color:#475569;font-size:.78rem;text-align:center}
+</style></head><body>
+<div class="header">
+  <div>
+    <h1>🔒 Double Proctoring Report</h1>
+    <p style="color:#64748b;margin-top:.3rem">Generated: 2026-08-31T11:27:25.465271 &nbsp;|&nbsp; Mode: WEBCAM</p>
+  </div>
+  <span class="risk">Risk: HIGH</span>
+</div>
+<div class="meta">
+  <div class="mc"><div class="lbl">Video</div><div class="val" style="font-size:.9rem">interview.mp4</div></div>
+  <div class="mc"><div class="lbl">Duration</div><div class="val">31.1s</div></div>
+  <div class="mc"><div class="lbl">Frames</div><div class="val">64</div></div>
+  <div class="mc"><div class="lbl">Process time</div><div class="val">60.0s</div></div>
+  <div class="mc"><div class="lbl">Total violations</div><div class="val" style="color:#ef4444">5</div></div>
+</div>
+<h2>Violation categories</h2>
+<div class="cats"><div class="cat-pill"><span class="cat cat-screen">🖥️ Screen</span><span class="cnt">1</span></div><div class="cat-pill"><span class="cat cat-webcam">👤 Webcam</span><span class="cnt">4</span></div></div>
+<h2>Violations timeline</h2>
+<table><thead><tr><th>#</th><th>Category</th><th>Type</th><th>Start</th><th>End</th><th>Duration</th><th>Confidence</th><th>Description</th><th>Evidence</th></tr></thead><tbody><tr>
+<td style="text-align:center">1</td>
+<td><span class="cat cat-screen">Device Screen</span></td>
+<td><code>extra_device_detected</code></td>
+<td>00:00:00</td>
+<td>00:00:30</td>
+<td>30.0s</td>
+<td><span class="conf">94%</span></td>
+<td style="font-size:0.82em;color:#6b7280;max-width:200px">2 laptop device(s) detected.</td>
+<td><a href="screenshots/frame_001334_extra_device_detected_00-00-22.png" target="_blank">📷 View</a></td></tr><tr>
+<td style="text-align:center">2</td>
+<td><span class="cat cat-webcam">📱 Webcam</span></td>
+<td><code>phone_detected</code></td>
+<td>00:00:04</td>
+<td>00:00:20</td>
+<td>16.0s</td>
+<td><span class="conf">83%</span></td>
+<td style="font-size:0.82em;color:#6b7280;max-width:200px">Mobile phone detected in the camera frame.</td>
+<td><a href="screenshots/frame_000754_phone_detected_00-00-12.png" target="_blank">📷 View</a></td></tr><tr>
+<td style="text-align:center">3</td>
+<td><span class="cat cat-webcam">People Webcam</span></td>
+<td><code>multiple_people</code></td>
+<td>00:00:04</td>
+<td>00:00:11</td>
+<td>6.8s</td>
+<td><span class="conf">91%</span></td>
+<td style="font-size:0.82em;color:#6b7280;max-width:200px">2 people detected in the camera frame.</td>
+<td><a href="screenshots/frame_000348_multiple_people_00-00-05.png" target="_blank">📷 View</a></td></tr><tr>
+<td style="text-align:center">4</td>
+<td><span class="cat cat-webcam">👤 Webcam</span></td>
+<td><code>absence_detected</code></td>
+<td>00:00:15</td>
+<td>00:00:30</td>
+<td>15.5s</td>
+<td><span class="conf">98%</span></td>
+<td style="font-size:0.82em;color:#6b7280;max-width:200px">No face detected for 3.4s</td>
+<td><a href="screenshots/frame_001247_absence_detected_00-00-20.png" target="_blank">📷 View</a></td></tr><tr>
+<td style="text-align:center">5</td>
+<td><span class="cat cat-webcam">📱 Webcam</span></td>
+<td><code>phone_detected</code></td>
+<td>00:00:25</td>
+<td>00:00:30</td>
+<td>5.3s</td>
+<td><span class="conf">51%</span></td>
+<td style="font-size:0.82em;color:#6b7280;max-width:200px">Mobile phone detected in the camera frame.</td>
+<td><a href="screenshots/frame_001537_phone_detected_00-00-25.png" target="_blank">📷 View</a></td></tr></tbody></table>
+<h2>Audit trail</h2><div class="audit-thumbs"><a href="audit_trail/audit_0001_00-00-00.jpg" target="_blank" class="audit-thumb">📸 00:00:00</a></div>
+<footer>Double Proctoring Analyzer v2.0 — Screen + Webcam + Audio + Process</footer>
+</body></html>

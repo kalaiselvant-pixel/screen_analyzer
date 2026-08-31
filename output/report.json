@@ -1,0 +1,93 @@
+{
+  "status": "success",
+  "generated_at": "2026-08-31T11:27:25.465271",
+  "video_file": "interview.mp4",
+  "video_duration": "31.1s",
+  "video_duration_seconds": 31.091667,
+  "sample_fps": 2.0,
+  "model_name": "yolov8n.pt",
+  "frames_analyzed": 64,
+  "processing_time": "60.0s",
+  "mode": "webcam",
+  "total_violations": 5,
+  "violation_summary": {
+    "extra_device_detected": 1,
+    "phone_detected": 2,
+    "multiple_people": 1,
+    "absence_detected": 1
+  },
+  "category_summary": {
+    "Screen": 1,
+    "Webcam": 4
+  },
+  "risk_level": "HIGH",
+  "violations": [
+    {
+      "start_time": "00:00:00",
+      "end_time": "00:00:30",
+      "duration": "30.0s",
+      "duration_seconds": 29.97,
+      "type": "extra_device_detected",
+      "confidence": 0.94,
+      "frames_flagged": 63,
+      "avg_confidence": 0.88,
+      "screenshot": "output\\screenshots\\frame_001334_extra_device_detected_00-00-22.png",
+      "description": "2 laptop device(s) detected."
+    },
+    {
+      "start_time": "00:00:04",
+      "end_time": "00:00:20",
+      "duration": "16.0s",
+      "duration_seconds": 15.95,
+      "type": "phone_detected",
+      "confidence": 0.832,
+      "frames_flagged": 31,
+      "avg_confidence": 0.611,
+      "screenshot": "output\\screenshots\\frame_000754_phone_detected_00-00-12.png",
+      "description": "Mobile phone detected in the camera frame."
+    },
+    {
+      "start_time": "00:00:04",
+      "end_time": "00:00:11",
+      "duration": "6.8s",
+      "duration_seconds": 6.77,
+      "type": "multiple_people",
+      "confidence": 0.907,
+      "frames_flagged": 15,
+      "avg_confidence": 0.869,
+      "screenshot": "output\\screenshots\\frame_000348_multiple_people_00-00-05.png",
+      "description": "2 people detected in the camera frame."
+    },
+    {
+      "start_time": "00:00:15",
+      "end_time": "00:00:30",
+      "duration": "15.5s",
+      "duration_seconds": 15.47,
+      "type": "absence_detected",
+      "confidence": 0.98,
+      "frames_flagged": 33,
+      "avg_confidence": 0.947,
+      "screenshot": "output\\screenshots\\frame_001247_absence_detected_00-00-20.png",
+      "description": "No face detected for 3.4s"
+    },
+    {
+      "start_time": "00:00:25",
+      "end_time": "00:00:30",
+      "duration": "5.3s",
+      "duration_seconds": 5.32,
+      "type": "phone_detected",
+      "confidence": 0.514,
+      "frames_flagged": 9,
+      "avg_confidence": 0.468,
+      "screenshot": "output\\screenshots\\frame_001537_phone_detected_00-00-25.png",
+      "description": "Mobile phone detected in the camera frame."
+    }
+  ],
+  "audit_trail": [
+    {
+      "timestamp": "00:00:00",
+      "path": "output\\audit_trail\\audit_0001_00-00-00.jpg"
+    }
+  ],
+  "output_directory": "output"
+}
