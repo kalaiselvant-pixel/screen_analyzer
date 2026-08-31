@@ -219,3 +219,5 @@ __marimo__/
 
 # Generated analyzer evidence
 output/screenshots/
+output/uploads/
+output/ui_reports/

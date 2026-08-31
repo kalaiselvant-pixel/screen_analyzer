@@ -33,6 +33,16 @@ pip install -r requirements.txt
 python main.py interview.mp4
 ```
 
+### Launch the local upload UI
+```bash
+streamlit run app.py
+```
+
+### Launch the UI and open it in the browser
+```powershell
+.\launch_ui.ps1
+```
+
 ### Options
 ```bash
 python main.py interview.mp4 \
